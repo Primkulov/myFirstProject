@@ -18,4 +18,10 @@ public class Google {
         Assert.assertTrue("Title failed", title.contains(testData));
 
     }
+    @Test
+    public void  googleImage(){
+        Driver.getDriver().get("https://google.com");
+        System.out.println("Checking some images");
+        Driver.quit();
+    }
 }
